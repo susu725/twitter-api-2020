@@ -61,7 +61,7 @@ const adminServices = {
           Followings: user.Followings.length
         }))
         .sort((a, b) => b.Followers - a.Followers)
-      cb(null, { userData })
+      cb(null, userData)
     }catch(err){
       cb(err)
     }
